@@ -15,14 +15,32 @@ public class Personagem (
     }
     fome = Math.min(fome + 1, 10);
     sono = Math.min(sono + 1, 10); 
-    System.out println(nome + "Caçando...");
    }
 
    void comer(){
-    System.out println(nome + "Comendo...");
+   if(fome >= 1){
+       System.out println(nome + "Comendo...");
+      // operador ternário 
+       energia = energia + 1 > 10 ? 10: energia + 1;
+       fome --;
    }
+   else {
+       System.out println(nome + "Sem fome...");
+   }
+   
+}
 
    void dormir(){
-    System.out println(nome + "Dormindo...");
-  } 
+    if (sono > 0){
+        System.out println(nome + "Dormindo...");
+        sono -= 1;
+        energia Math.min(10, energia + 1);
+    }
+    else {
+        System.out println(nome + "Sem sono...");
+    } 
+}
+      
+    
+    
 )

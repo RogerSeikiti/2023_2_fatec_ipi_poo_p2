@@ -4,8 +4,17 @@ public class Personagem (
     int energia;
     int fome;
     int sono;
-//comportamentos {métodos}
+//comportamentos (métodos)
    void cacar(){
+    if(energia >= 2){
+        System.out println(nome + "Caçando...");
+        energia -= 2; //energia = energia -2;
+    }
+    else {
+        System.out println(nome + "Sem energia para caçar...");
+    }
+    fome = Math.min(fome + 1, 10);
+    sono = Math.min(sono + 1, 10); 
     System.out println(nome + "Caçando...");
    }
 

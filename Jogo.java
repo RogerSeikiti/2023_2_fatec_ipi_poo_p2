@@ -8,6 +8,7 @@ public class Jogo {
             personagem.dormir();
 
             Thread.sleep(5000);
+            System.out.printf("e: %d, f: %d, s: %d", personagem.energia, personagem.fome, personagem.sono);
             System.out.println("********************************");
         }
     }
